@@ -1,9 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
-// https://vitejs.dev/config/
+// Yeh config Github Pages ke liye best hai.
+// Apni repo ka EXACT naam 'base' me likhna hai.
+// Example: base: '/CallHub-Website/' (case sensitive, repo ke URL se match karna)
+
 export default defineConfig({
+  base: '/CallHub-Website/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -14,4 +18,4 @@ export default defineConfig({
     host: '::',
     port: 3000,
   },
-})
+});
