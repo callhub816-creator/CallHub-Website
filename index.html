@@ -9,6 +9,8 @@
 	</head>
 	<body>
 		<div id="root"></div>
-		<script type="module" src="/src/main.jsx"></script>
+		<!-- THIS LINE CHANGED FOR PRODUCTION DEPLOYMENT -->
+		<script type="module" src="/src/main.jsx"></script> <!-- Ye default dev server wala hota hai, -->
+        <!-- Isse hatakar, deployment me dist wali file ka reference use karna hota hai -->
 	</body>
 </html>
